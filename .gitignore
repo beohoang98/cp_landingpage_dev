@@ -1,1 +1,4 @@
 .DS_Store
+_config.dev.yml
+_site/
+.env

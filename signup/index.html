@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -275,6 +278,9 @@
     <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
     <!-- CJP MODELS -->
+    <script>
+      window.FIREBASE_CONFIG = JSON.parse(atob('{{- site.env.FIREBASE -}}'));
+    </script>
     <script src="https://beohoang98.github.io/cjp-models/dist.browser/cjp-models.min.js"></script>
 
     <script>

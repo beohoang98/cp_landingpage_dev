@@ -3,13 +3,7 @@
     let isVerifyCaptcha = false;
     let isAcceptPolicy = false;
 
-    const config = {
-        apiKey: "AIzaSyCphd7p-BHxKBj9Xaxk85ilcYYRm-HCC-Q",
-        authDomain: "cloudjet-work.firebaseapp.com",
-        databaseURL: "https://cloudjet-work.firebaseio.com",
-        projectId: "cloudjet-work",
-        appId: "1:736915700044:web:73ae17b3efdec4b3"
-    };
+    const config = window.FIREBASE_CONFIG;
     firebase.initializeApp(config);
     const Auth = firebase.auth();
     const Firestore = firebase.firestore();
